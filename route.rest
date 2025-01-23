@@ -1,0 +1,31 @@
+GET  http://localhost:3000/mitglieder/
+
+####
+
+POST http://localhost:3000/mitglieder/
+Content-Type: application/json 
+
+{
+  "name": "Yatscha",
+  "verein": "Man Utd",
+  "BeitrittsDatum": "2025-01-01T00:00:00Z"
+}
+
+###
+
+DELETE http://localhost:3000/mitglieder/
+Content-Type: application/json
+
+{
+  "confirm": true
+}
+
+###
+
+PATCH http://localhost:3000/mitglieder/678c19ac7fd15d9b733b8389
+Content-Type: application/json
+
+{
+    "name": "Yahya",
+    "verein": "Arsenal"
+}
