@@ -22,17 +22,6 @@ router.get('/', async (req, res) => {
 // Einen Eintrag wiedergeben
 router.get('/:id', getMitglied, (req, res) => { // 'res' ist korrekt definiert
     res.json(res.mitglied)
-    
-     
-    /*try {
-        const mitglied = await Mitglied.findById(req.params.id); // Mongoose sucht Mitglied anhand der ID
-        if (!mitglied) {
-            return res.status(404).json({ message: 'Mitglied nicht gefunden' }); // Wenn kein Mitglied gefunden wird
-        }
-        res.json(mitglied); // Antwort mit dem gefundenen Mitglied
-    } catch (err) {
-        res.status(500).json({ message: err.message }); // Fehlerbehandlung
-    } */
 });
 
 

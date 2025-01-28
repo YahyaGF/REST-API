@@ -22,7 +22,7 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3000/mitglieder/678c19ac7fd15d9b733b8389
+PATCH http://localhost:3000/mitglieder/67980f38f973aef51c9fe181
 Content-Type: application/json
 
 {
