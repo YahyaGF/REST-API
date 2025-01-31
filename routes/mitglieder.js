@@ -28,7 +28,7 @@ router.get('/:id', getMitglied, (req, res) => { // 'res' ist korrekt definiert
 // Einen Eintrag erstellen
 router.post('/', async (req, res) => {
    try {
-        const newMitglied = new Mitglied({  // 'newMitglied', um den Namenskonflikt zu vermeiden
+        const newMitglied = new Mitglied({  
             name: req.body.name,
             verein: req.body.verein,
             BeitrittsDatum: new Date(req.body.BeitrittsDatum),  // Datumsformatierung
